@@ -1,16 +1,40 @@
+import { useState } from 'react';
+import "./variables.css"
+import {motion} from 'framer-motion';
 import './App.css'
-import viteLogo from './assets/wlogo.svg'
+import Preloader from './components/Preloader/Preloader.jsx'
+import Cursor from './components/Cursor/Cursor.jsx'
+import Hero from './components/Hero/Hero.jsx';
 
 function App() {
 
-  return (
+  // preloader state
+  const [isLoading, setIsLoading] = useState(true);
+
+  // function to toggle preloader
+  const startLoading = (loadingState) => {
+    setIsLoading(loadingState);
+  };
+
+  return isLoading ? (
+
+    // preloader
     <>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" />
-        </a>
-        <h1>test font</h1>
-        <box-icon name="rocket"></box-icon>
+      <Preloader startLoading={startLoading} />
+      <Cursor />
     </>
+  ) : (
+
+    // main app
+    <motion.div
+    initial={{y: 900}}
+    animate={{
+      y: 0,
+    transitionDuration: "1s",
+  }}>
+      <Hero />
+      <Cursor />
+    </motion.div>
   )
 }
 

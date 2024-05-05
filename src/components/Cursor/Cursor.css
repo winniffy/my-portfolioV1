@@ -1,0 +1,11 @@
+.cursor {
+  background-color: var(--dark-color);
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+  }
+
