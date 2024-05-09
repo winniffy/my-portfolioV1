@@ -1,6 +1,7 @@
 .hero_container {
     min-height: 100svh;
     position: relative;
+    border: 4px solid green;
 }
 
 .hero_bg-container {
@@ -42,5 +43,30 @@
 .hero_main-container {
     position: relative;
     z-index: 2;
-    background-color: antiquewhite;
+    border: 2px solid red;
+    padding-inline: var(--inline-padding)
+}
+
+.hero_top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    border: 1px solid darkgoldenrod;
+}
+
+.hero_header {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15% auto 0;
+}
+
+.hero_header-mid {
+    display: block;
+    font-weight: 300;
+}
+
+.hero_header-bottom {
+    font-weight: 700;
 }
