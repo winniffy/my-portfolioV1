@@ -55,6 +55,12 @@
     border: 1px solid darkgoldenrod;
 }
 
+.hero_time {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 .hero_header {
     font-size: 3rem;
     font-weight: 600;

@@ -1,6 +1,22 @@
+import { useEffect, useState } from 'react';
 import './Hero.css'
 
 const Hero = () => {
+
+    const [now, setNow] = useState(new Date());
+
+    // function to display time 
+    function displayTime(){
+        setNow(new Date())
+    }
+
+    // refresh time
+    useEffect(() => {
+        const refreshTime = setInterval(displayTime, 1000);
+
+        return () => clearInterval(refreshTime);
+    }, []);
+
     return (
         <div className='hero_container'>
 
@@ -20,7 +36,14 @@ const Hero = () => {
                 {/* hero top navbar */}
                 <header className="hero_top-nav">
                     <h2 className="hero_logo">w.</h2>
-                    <p className="hero_time">THUR. 13TH AUG, 2024 - 14:05</p>
+                    <p className="hero_time">
+                        {
+                            `${now.toDateString()} \u00A0 - \u00A0 
+                            ${(now.getHours()<10?'0':'') + now.getHours()} : 
+                            ${(now.getMinutes()<10?'0':'') + now.getMinutes()} : 
+                            ${(now.getSeconds()<10?'0':'') + now.getSeconds()} `
+                        }
+                    </p>
                     <button className="mode_btn">DARK MODE</button>
                 </header>
 
@@ -31,7 +54,7 @@ const Hero = () => {
             </section>
 
             <nav className="navbar">
-                
+
             </nav>
         </div>
     )
