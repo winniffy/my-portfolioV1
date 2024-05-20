@@ -1,6 +1,14 @@
 import { useEffect, useState } from 'react';
 import './Hero.css'
 
+// nav items array
+const NavItems = [
+    { item: 'HOME'},
+    { item: 'PROJECTS'},
+    { item: 'ABOUT ME'},
+    { item: 'CONTACT'},
+];
+
 const Hero = () => {
 
     const [now, setNow] = useState(new Date());
@@ -33,9 +41,12 @@ const Hero = () => {
 
             {/* hero main */}
             <section className="hero_main-container">
+
                 {/* hero top navbar */}
                 <header className="hero_top-nav">
                     <h2 className="hero_logo">w.</h2>
+
+                    {/* hero date/time */}
                     <p className="hero_time">
                         {
                             `${now.toDateString()} \u00A0 - \u00A0 
@@ -44,6 +55,8 @@ const Hero = () => {
                             ${(now.getSeconds()<10?'0':'') + now.getSeconds()} `
                         }
                     </p>
+
+                    {/* dark/light mode button */}
                     <button className="mode_btn">DARK MODE</button>
                 </header>
 
@@ -53,9 +66,20 @@ const Hero = () => {
                 </h1>
             </section>
 
+            {/* nav bar */}
             <nav className="navbar">
-
+                <ul className="nav_group">
+                    {NavItems.map((nav, index) => (
+                        <li className='nav_item' key={index}>
+                            <a href="#" className="nav_link" >
+                                {nav.item}
+                            </a>
+                        </li>
+                    ))
+                    }
+                </ul>
             </nav>
+
         </div>
     )
 }

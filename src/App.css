@@ -1,11 +1,11 @@
-.logo {
-  height: 1.5rem;
-  padding: 1.5em;
+.hero_logo {
+  font-size: 2rem;
   will-change: filter;
   transition: filter 300ms;
+  cursor: pointer;
 }
 
-.logo:hover {
+.hero_logo:hover {
   filter: drop-shadow(0 0 2em #ff3c00c4);
 }
 
