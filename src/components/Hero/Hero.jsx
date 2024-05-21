@@ -37,7 +37,7 @@ const Hero = () => {
 
                 {/* hero top navbar */}
                 <header className="hero_top-nav">
-                    <h2 className="hero_logo">w.</h2>
+                    <h2 className="hero_logo hero_logo-top">w.</h2>
 
                     {/* hero date/time */}
                     <p className="hero_time">

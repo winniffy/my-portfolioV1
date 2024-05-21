@@ -42,3 +42,45 @@
     width: 100%; 
     left: 0; 
 }
+
+.menu_hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* responsiveness ----------------------------------- mobile */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding-block: .5rem;
+    }
+
+    .hero_logo-mobile {
+        font-size: 1.5rem;
+    }
+
+    .menu_hamburger {
+        display: block;
+    }
+
+    .nav_group {
+        display: none;
+    }
+
+    .nav_group-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* mobile menu container */
+    .mobile_menu-container {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+}

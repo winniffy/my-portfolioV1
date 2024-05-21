@@ -57,6 +57,7 @@
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 300;
+    margin-inline: auto;
 }
 
 .mode_btn {
@@ -79,4 +80,26 @@
 
 .hero_header-bottom {
     font-weight: 700;
+}
+
+
+/* responsiveness ----------------------------------- mobile */
+@media only screen and (max-width: 768px) {
+    .hero_logo-top {
+        display: none;
+    }
+
+    .mode_btn {
+        display: none;
+    }
+
+    .hero_time {
+        font-size: .825rem;
+        margin-top: 1rem;
+    }
+
+    .hero_header {
+        font-size: 2rem;
+        margin-top: 40%;
+    }
 }
