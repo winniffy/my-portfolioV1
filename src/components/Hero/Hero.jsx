@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Hero.css'
-
-// nav items array
-const NavItems = [
-    { item: 'HOME'},
-    { item: 'PROJECTS'},
-    { item: 'ABOUT ME'},
-    { item: 'CONTACT'},
-];
+import Navbar from '../Navbar/Navbar';
 
 const Hero = () => {
 
@@ -66,19 +59,8 @@ const Hero = () => {
                 </h1>
             </section>
 
-            {/* nav bar */}
-            <nav className="navbar">
-                <ul className="nav_group">
-                    {NavItems.map((nav, index) => (
-                        <li className='nav_item' key={index}>
-                            <a href="#" className="nav_link" >
-                                {nav.item}
-                            </a>
-                        </li>
-                    ))
-                    }
-                </ul>
-            </nav>
+            {/* navbar component */}
+            <Navbar />
 
         </div>
     )

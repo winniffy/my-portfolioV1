@@ -1,3 +1,4 @@
+import './Navbar.css'
 
 // nav items array
 const NavItems = [
@@ -9,14 +10,15 @@ const NavItems = [
 
 const Navbar = () => {
   return (
-    <nav className="nav">
+    <nav className="navbar">
         <ul className="nav_group">
             {NavItems.map((nav, index) => (
-                <a href="#" className="nav_link" key={index}>
-                    {nav.item}
-                </a>
+                <li className='nav_item' key={index}>
+                    <a href="#" className="nav_link" >
+                        {nav.item}
+                    </a>
+                </li>
             ))
-
             }
         </ul>
     </nav>
