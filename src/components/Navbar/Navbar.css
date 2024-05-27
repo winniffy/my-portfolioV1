@@ -75,12 +75,50 @@
 
     /* mobile menu container */
     .mobile_menu-container {
-        background-color: antiquewhite;
+        background-color: var(--bg-color-light);
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 2.8rem;
+    }
+
+    .mode_btn-mobile {
+        background-color: var(--orange);
+        color: var(--bg-color-light);
+        border-radius: 30px;
+        font-size: .65rem;
+        margin-bottom: 2rem;
+    }
+
+    .nav_item {
+        font-size: 2rem;
+        border-bottom: 0.5px solid var(--orange);
+        width: 84%;
+        text-align: center;
+        padding-block: 1.5rem;
+    }
+
+    .nav_link::after { 
+        all: initial;
+    }
+
+    .nav_link:hover:after { 
+        all: initial;
+    }
+
+    .close_btn-container {
+        margin-top: 2rem;
+        background-color: transparent;
+    }
+
+    .close_text {
+        font-size: .65rem;
+        margin-top: -1rem;
     }
 }

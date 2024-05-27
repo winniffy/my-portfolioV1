@@ -63,7 +63,10 @@ const Navbar = () => {
 
             {/* close menu button */}
             <li>
-                <p onClick={showMenu}>CLOSE</p>
+                <button onClick={showMenu}  className="close_btn-container">
+                    <box-icon name='x' size="4.5rem" color="#928F8E50"></box-icon>
+                    <p className='close_text'>CLOSE</p>
+                </button>
             </li>
         </ul>
         }
