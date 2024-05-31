@@ -102,4 +102,8 @@
         font-size: 2rem;
         margin-top: 40%;
     }
+
+    .hero_border-column {
+        padding-inline: 4rem;
+    }
 }
