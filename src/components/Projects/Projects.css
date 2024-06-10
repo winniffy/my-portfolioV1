@@ -1,0 +1,13 @@
+.projects_container {
+    margin-top: 8rem;
+    padding-inline: var(--inline-padding);
+    border: 2px solid red;
+}
+
+.projects_header {
+    text-align: center;
+}
+
+.projects_subtext {
+    text-align: center;
+}
