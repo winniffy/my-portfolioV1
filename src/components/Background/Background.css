@@ -1,0 +1,43 @@
+.hero_bg-container {
+    z-index: 1;
+    position: absolute;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100svh;
+}
+
+.hero_border-row {
+    width: 100%;
+    padding-block: 5.2rem;
+    border-bottom: 1px solid var(--hero-bg-lines);
+}
+
+.hero_bg-row_container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg-column_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.hero_border-column {
+    padding-inline: 6.7rem;
+    border-right: 1px solid var(--hero-bg-lines);
+}
+
+
+/* responsiveness ----------------------------------- mobile */
+@media only screen and (max-width: 768px) {
+    .hero_border-column {
+        padding-inline: 4rem;
+    }
+}

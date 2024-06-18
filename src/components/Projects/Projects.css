@@ -11,3 +11,7 @@
 .projects_subtext {
     text-align: center;
 }
+
+.project_cards-container {
+    border: 2px solid green;
+}

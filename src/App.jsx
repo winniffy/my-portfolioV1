@@ -6,6 +6,8 @@ import Preloader from './components/Preloader/Preloader.jsx'
 import Cursor from './components/Cursor/Cursor.jsx'
 import Hero from './components/Hero/Hero.jsx';
 import Projects from './components/Projects/Projects.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Background from './components/Background/Background.jsx';
 // import Navbar from './components/Navbar/Navbar.jsx';
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
 
     // preloader
     <>
+      <Background />
       <Preloader startLoading={startLoading} />
       <Cursor />
     </>
@@ -35,8 +38,10 @@ function App() {
         y: 0,
       transitionDuration: "1s",
   }}>
+    <Background />
       <Hero />
       <Cursor />
+      <Navbar />
       <Projects />
     </motion.div>
   )
