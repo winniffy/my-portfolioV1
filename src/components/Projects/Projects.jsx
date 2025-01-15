@@ -1,9 +1,49 @@
 /* eslint-disable react/no-unescaped-entities */
+import ProjectCard from "../ProjectCard/ProjectCard"
 import "./Projects.css"
+import tokeiCover from "../../assets/tokei-cover.png";
+import howfarCover from "../../assets/howfar-cover.png";
+import waqCover from "../../assets/waq-cover.png";
+import cozyCover from "../../assets/cozyhaven-cover.png";
 
 const Projects = () => {
-  return (
+
+    const projectsArray = [
+        {
+            id: 1,
+            image: `${tokeiCover}`,
+            title: 'tokei',
+            details: 'a movie/series encyclopedia',
+            code: 'https://github.com/winniffy/tokei',
+            live: 'https://tokei-bice.vercel.app/'
+
+        },
+
+        {
+            id: 2,
+            image: `${howfarCover}`,
+            title: 'howfar',
+            details: 'an annual multi-timer web app'
+        },
+
+        {
+            id: 1,
+            image: `${waqCover}`,
+            title: 'WAQ',
+            details: 'landing page'
+        },
+
+        {
+            id: 1,
+            image: `${tokeiCover}`,
+            title: 'tokei',
+            details: 'a movie/series encyclopedia'
+        },
+    ]
+
+return (
     <section className="projects_container">
+        {/* projects header */}
         <h2 className="projects_header">projects</h2>
         <p className="projects_subtext">
             selected projects i've made in the kitchen
@@ -11,14 +51,18 @@ const Projects = () => {
 
         {/* cards container */}
         <div className="project_cards-container">
-            <article className="project_card">
-                <div className="project_card-inner"></div>
-                <p className="project_card-text"> <b>tokei:</b> a movie/series encyclopedia </p>
-                <div className="project_card-btns_container">
-                    <button className="project_card-btn">code</button>
-                    <button className="project_card-btn">live</button>
-                </div>
-            </article>
+            {
+                projectsArray.map((project) =>
+                    <ProjectCard
+                        key={project.id}
+                        image={project.image}
+                        title={project.title}
+                        details={project.details}
+                        code={project.code}
+                        live={project.live}
+                    />
+                )
+            }
         </div>
     </section>
   )

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './Hero.css'
-import Navbar from '../Navbar/Navbar';
 
 const Hero = () => {
 
@@ -47,9 +46,6 @@ const Hero = () => {
                 <span className='hero_header-bottom'>creating incredible web experiences.</span>
                 </h1>
             </section>
-
-            {/* navbar component */}
-            <Navbar />
 
         </div>
     )

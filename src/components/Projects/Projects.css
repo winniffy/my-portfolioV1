@@ -12,6 +12,18 @@
     text-align: center;
 }
 
+/* project cards container  */
 .project_cards-container {
     border: 2px solid green;
+    padding-block: 2rem;
+}
+
+.project_card {
+    border: 1px solid blue;
+    padding-block: 2rem;
+}
+
+.project_card-inner {
+    border: 2px solid black;
+    padding-block: 2rem;
 }

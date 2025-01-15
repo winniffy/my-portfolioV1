@@ -36,12 +36,12 @@ function App() {
       initial={{y: 900}}
       animate={{
         y: 0,
-      transitionDuration: "1s",
-  }}>
-    <Background />
+        transitionDuration: "1s",
+    }}>
+      <Background />
       <Hero />
       <Cursor />
-      <Navbar />
+      {/* <Navbar /> */}
       <Projects />
     </motion.div>
   )
