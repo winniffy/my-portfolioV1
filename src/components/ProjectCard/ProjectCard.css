@@ -1,0 +1,9 @@
+.project_card {
+    border: 1px solid blue;
+    padding: 2rem;
+}
+
+.project_card-inner {
+    border: 2px solid black;
+    padding-block: 2rem;
+}

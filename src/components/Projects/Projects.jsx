@@ -35,9 +35,9 @@ const Projects = () => {
 
         {
             id: 1,
-            image: `${tokeiCover}`,
-            title: 'tokei',
-            details: 'a movie/series encyclopedia'
+            image: `${cozyCover}`,
+            title: 'cozyhaven',
+            details: 'landing page'
         },
     ]
 
