@@ -24,6 +24,9 @@
     "a b"
     "c d"
     ;
-    gap: 2rem;
+    gap: 4rem;
 }
 
+.view_more {
+    float: right;
+}

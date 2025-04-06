@@ -1,9 +1,41 @@
 .project_card {
-    border: 1px solid blue;
+    background-color: var(--card-bg-color-light);
+    border: 1px solid #000;
     padding: 2rem;
+    border-radius: 15px;
 }
 
 .project_card-inner {
     border: 2px solid black;
     padding-block: 2rem;
+    border-radius: 20px;
+}
+
+.project_card-text {
+    padding-block: 1rem;
+}
+
+.project_card-btns_container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_card-btn {
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: .75rem;
+}
+
+.project_card-btn_text {
+    color: var(--card-bg-color-light);
+    text-transform: uppercase;
+}
+
+.project_card-icon {
+    width: 20px;
 }
