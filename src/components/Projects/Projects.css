@@ -1,11 +1,12 @@
 .projects_container {
-    margin-top: 8rem;
+    margin-block: 8rem;
     padding-inline: var(--inline-padding);
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .projects_header {
     text-align: center;
+    font-size: 2rem;
 }
 
 .projects_subtext {
@@ -14,7 +15,7 @@
 
 /* project cards container  */
 .project_cards-container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-block: 2rem;
 
     display: grid;
@@ -29,4 +30,15 @@
 
 .view_more {
     float: right;
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.view_more-icon {
+    width: 20px;
 }

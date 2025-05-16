@@ -7,6 +7,8 @@ import waqCover from "../../assets/waq-cover.png";
 import cozyCover from "../../assets/cozyhaven-cover.png";
 import githubIcon from "../../assets/githubicon.svg";
 import linkIcon from "../../assets/linkicon.svg";
+import arrowBackIcon from "../../assets/arrowBackIcon.svg";
+
 
 const Projects = () => {
 
@@ -61,7 +63,7 @@ return (
         {/* projects header */}
         <h2 className="projects_header">projects</h2>
         <p className="projects_subtext">
-            selected projects i've made in the kitchen
+            selected projects i've cooked in the kitchen
         </p>
 
         {/* cards container */}
@@ -83,10 +85,12 @@ return (
         </div>
 
         {/* view more projects */}
-        <button className="view_more">
-            <p>view more of my projects on github</p>
-            <img src="" alt="" />
-        </button>
+        <a href="https://github.com/winniffy" target="_blank">
+            <button className="view_more">
+                <p>view more of my projects on github</p>
+                <img src={arrowBackIcon} alt="arrow back icon" className="view_more-icon" />
+            </button>
+        </a>
     </section>
 )
 }

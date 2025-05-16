@@ -23,7 +23,7 @@ const ProjectCard = ({image, title, details, code, live, codeIcon, liveIcon}) =>
                 </button>
             </a>
 
-            <a href={live}>
+            <a href={live} target="_blank">
                 <button className="project_card-btn">
                     <img src={liveIcon} alt="" className='project_card-icon' />
                     <p className='project_card-btn_text'>live</p>
