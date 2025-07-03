@@ -1,0 +1,14 @@
+.about_container {
+    margin-block: 8rem;
+    padding-inline: var(--inline-padding);
+    border: 2px solid red;
+}
+
+.about_header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about_subtext {
+    text-align: center;
+}

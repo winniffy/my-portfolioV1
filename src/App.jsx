@@ -8,6 +8,7 @@ import Hero from './components/Hero/Hero.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Background from './components/Background/Background.jsx';
+import About from './components/About/About.jsx';
 // import Navbar from './components/Navbar/Navbar.jsx';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Cursor />
       {/* <Navbar /> */}
       <Projects />
+      <About />
     </motion.div>
   )
 }
